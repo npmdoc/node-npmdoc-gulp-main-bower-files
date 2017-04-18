@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/mauricedb/gulp-main-bower-files"
-
-    >gulp-main-bower-files (v1.6.2)</a>
+    <a href="https://github.com/mauricedb/gulp-main-bower-files">gulp-main-bower-files (v1.6.2)</a>
 </h1>
 <h4>Use main-bower-files in a more gulp like way.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-main-bower-files">module gulp-main-bower-files</a><ol>
 
@@ -88,24 +81,24 @@
     <li>description and source-code<pre class="apidocCodePre">gulp-main-bower-files = function (filter, opts, callback) {
     return through.obj(function (file, enc, cb) {
         if (file.isStream()) {
-            this.emit(&#x27;error&#x27;, new PluginError(&#x27;gulp-main-bower-files&#x27;, &#x27;Streams are not supported!&#x27;));
+            this.emit('error', new PluginError('gulp-main-bower-files', 'Streams are not supported!'));
             return cb();
         }
 
         if (file.isBuffer()) {
             var bowerFolder = getBowerFolder(file.base);
 
-            if (typeof filter === &#x27;function&#x27;) {
+            if (typeof filter === 'function') {
                 callback = filter;
                 opts = null;
                 filter = null;
-            } else if (typeof filter !== &#x27;string&#x27; &#x26;&#x26; Array.isArray(filter) === false) {
-                if (typeof opts === &#x27;function&#x27;) {
+            } else if (typeof filter !== 'string' &amp;&amp; Array.isArray(filter) === false) {
+                if (typeof opts === 'function') {
                     callback = opts;
                 }
                 opts = filter;
                 filter = null;
-            } else if (typeof opts === &#x27;function&#x27;) {
+            } else if (typeof opts === 'function') {
                 callback = opts;
                 opts = null;
             }
@@ -142,3 +135,4 @@
     ]
 </div>
 </div>
+</body></html>

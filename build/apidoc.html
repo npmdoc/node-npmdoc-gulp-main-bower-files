@@ -61,12 +61,78 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-main-bower-files">module gulp-main-bower-files</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-main-bower-files.gulp-main-bower-files">
+            function <span class="apidocSignatureSpan"></span>gulp-main-bower-files
+            <span class="apidocSignatureSpan">(filter, opts, callback)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gulp-main-bower-files" id="apidoc.module.gulp-main-bower-files">module gulp-main-bower-files</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-main-bower-files.gulp-main-bower-files" id="apidoc.element.gulp-main-bower-files.gulp-main-bower-files">
+        function <span class="apidocSignatureSpan"></span>gulp-main-bower-files
+        <span class="apidocSignatureSpan">(filter, opts, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gulp-main-bower-files = function (filter, opts, callback) {
+    return through.obj(function (file, enc, cb) {
+        if (file.isStream()) {
+            this.emit(&#x27;error&#x27;, new PluginError(&#x27;gulp-main-bower-files&#x27;, &#x27;Streams are not supported!&#x27;));
+            return cb();
+        }
+
+        if (file.isBuffer()) {
+            var bowerFolder = getBowerFolder(file.base);
+
+            if (typeof filter === &#x27;function&#x27;) {
+                callback = filter;
+                opts = null;
+                filter = null;
+            } else if (typeof filter !== &#x27;string&#x27; &#x26;&#x26; Array.isArray(filter) === false) {
+                if (typeof opts === &#x27;function&#x27;) {
+                    callback = opts;
+                }
+                opts = filter;
+                filter = null;
+            } else if (typeof opts === &#x27;function&#x27;) {
+                callback = opts;
+                opts = null;
+            }
+
+            opts = opts || {};
+            opts.filter = filter;
+            opts.paths = opts.path || {};
+            opts.paths.bowerJson = file.path;
+            opts.paths.bowerDirectory = file.base += bowerFolder;
+
+            var fileNames = mainBowerFiles(opts, callback);
+
+            fileNames.forEach(function (fileName) {
+                var newFile = file.clone();
+                newFile.path = fileName;
+                newFile.contents = fs.readFileSync(newFile.path);
+                newFile.stat = fs.statSync(newFile.path);
+                this.push(newFile);
+            }, this);
+        }
+
+        cb();
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
