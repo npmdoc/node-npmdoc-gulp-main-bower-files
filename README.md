@@ -1,9 +1,14 @@
-# api documentation for  [gulp-main-bower-files (v1.6.2)](https://github.com/mauricedb/gulp-main-bower-files)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-main-bower-files.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-main-bower-files) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-main-bower-files.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-main-bower-files)
+# npmdoc-gulp-main-bower-files
+
+#### api documentation for  [gulp-main-bower-files (v1.6.2)](https://github.com/mauricedb/gulp-main-bower-files)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-main-bower-files.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-main-bower-files) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-main-bower-files.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-main-bower-files)
+
 #### Use main-bower-files in a more gulp like way.
 
-[![NPM](https://nodei.co/npm/gulp-main-bower-files.png?downloads=true)](https://www.npmjs.com/package/gulp-main-bower-files)
+[![NPM](https://nodei.co/npm/gulp-main-bower-files.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-main-bower-files)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-main-bower-files/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp-main-bower-files_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-main-bower-files/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-main-bower-files/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-main-bower-files/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-main-bower-files/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-main-bower-files/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-main-bower-files/build/screenCapture.npmPackageListing.svg)
 
@@ -55,13 +60,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "mauricedb",
-            "email": "maurice.de.beijer@gmail.com"
+            "name": "mauricedb"
         }
     ],
     "name": "gulp-main-bower-files",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/mauricedb/gulp-main-bower-files.git"
@@ -74,16 +77,6 @@
     "version": "1.6.2"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-main-bower-files](#apidoc.module.gulp-main-bower-files)
-
-
-
-# <a name="apidoc.module.gulp-main-bower-files"></a>[module gulp-main-bower-files](#apidoc.module.gulp-main-bower-files)
 
 
 
