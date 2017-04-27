@@ -1,6 +1,6 @@
 # npmdoc-gulp-main-bower-files
 
-#### api documentation for  [gulp-main-bower-files (v1.6.2)](https://github.com/mauricedb/gulp-main-bower-files)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-main-bower-files.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-main-bower-files) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-main-bower-files.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-main-bower-files)
+#### basic api documentation for  [gulp-main-bower-files (v1.6.2)](https://github.com/mauricedb/gulp-main-bower-files)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-main-bower-files.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-main-bower-files) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-main-bower-files.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-main-bower-files)
 
 #### Use main-bower-files in a more gulp like way.
 
@@ -74,7 +74,8 @@
         "test": "istanbul cover ./node_modules/mocha/bin/_mocha",
         "test:watch": "mocha --watch"
     },
-    "version": "1.6.2"
+    "version": "1.6.2",
+    "bin": {}
 }
 ```
 
